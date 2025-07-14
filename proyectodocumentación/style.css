@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(0, 7, 70);
+
+    .título{
+        color: rgb(240, 0, 190);
+        background-color: rgb(113, 63, 248);
+        font-size:20px;
+        text-align: center;}
+
+        .autorías h2 span {
+        text-align: center;
+        margin-right: 70px; /* ajusta el espacio que quieras entre nombres */
+        display: inline-block;
+        }
+
+        .autores{
+        color: rgb(195, 243, 71);
+        }
+
+        .autorías{
+        color: rgb(43, 75, 247);
+        }
+
+        .descripción{
+        color: rgb(245, 130, 46);
+        }
+
+        .proceso{
+        color: rgb(245, 130, 46);
+        }
+        
+} 
+
+p{
+    color: rgb(160, 178, 199);
+    
+}
+
+.h1 {
+    color: blue;
+}
