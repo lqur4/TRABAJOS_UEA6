@@ -1,45 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap');
+
 *{
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
-body {
-    background-color: rgb(0, 7, 70);
 
-    .título{
-        color: rgb(240, 0, 190);
-        background-color: rgb(113, 63, 248);
-        font-size:20px;
-        text-align: center;}
+body{
+    font-family: 'TikTok', sans-serif;
+    background-color: rgb(209, 210, 219);
+
+        .titulo{
+        color: rgb(255, 243, 252);
+        /*background-color: rgb(8, 15, 80);*/
+        font-size:60px;
+        text-align: center;
+        }
+
+        .año{
+        color: rgb(255, 243, 252);
+        font-size: 20px;
+        text-align: center;
+        }
 
         .autorías h2 span {
         text-align: center;
-        margin-right: 70px; /* ajusta el espacio que quieras entre nombres */
+        margin-right: 300px; /* ajusta el espacio que quieras entre nombres */
         display: inline-block;
         }
 
         .autores{
-        color: rgb(195, 243, 71);
+        color: rgb(168, 184, 127);
+        text-align: center;
         }
 
         .autorías{
-        color: rgb(43, 75, 247);
+        color: rgb(168, 184, 127);
+        text-align: center;
         }
 
-        .descripción{
-        color: rgb(245, 130, 46);
+        .descripción {
+        color: bisque;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 0 20px;
+        text-align: center;
         }
 
         .proceso{
         color: rgb(245, 130, 46);
-        }
-        
+        } 
 } 
 
-p{
-    color: rgb(160, 178, 199);
-    
+.header {
+    background-image: url(assets/a.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 80vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
-.h1 {
-    color: blue;
+.titulo {
+    position: absolute;
+    text-align: center;
+    top: 150px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ffffff21;
 }
