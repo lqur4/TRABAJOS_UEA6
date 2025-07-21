@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Intel+One+Mono:ital,wght@0,300..700;1,300..700&display=swap');
 
 *{
     margin: 0px;
@@ -9,15 +9,28 @@
 
 
 body{
-    font-family: 'TikTok', sans-serif;
-    background-color: rgb(209, 210, 219);
+    font-family: 'Intel One Mono', monospace;
+    background-color: rgb(0, 0, 0);
 
-        .titulo{
-        color: rgb(255, 243, 252);
-        /*background-color: rgb(8, 15, 80);*/
-        font-size:60px;
-        text-align: center;
+        .hero {
+        height: 100vh;  /* ocupa toda la altura de la ventana */
+        background-image: url('assets/fondo1.gif');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgba(255, 255, 255, 0.479);
+        font-size: 70px;
         }
+
+        /*.titulo{
+        color: rgb(189, 13, 145);
+        background-color: rgb(8, 15, 80);
+        font-size:30px;
+        text-align: center;
+        }*/
 
         .año{
         color: rgb(255, 243, 252);
@@ -27,8 +40,14 @@ body{
 
         .autorías h2 span {
         text-align: center;
-        margin-right: 300px; /* ajusta el espacio que quieras entre nombres */
+        margin-right: 39px; /* ajusta el espacio que quieras entre nombres */
+        /*display: inline-block;*/
+
         display: inline-block;
+        margin: 0 15px;
+        font-size: 1rem;
+        font-weight: 400;
+        font-family: 'Intel One Mono', monospace;   
         }
 
         .autores{
@@ -37,16 +56,20 @@ body{
         }
 
         .autorías{
-        color: rgb(168, 184, 127);
+        color: rgb(120, 142, 168);
         text-align: center;
+
+        position: absolute;
+        top: 30px; /* distancia desde el borde superior */
+        width: 100%;
         }
 
         .descripción {
-        color: bisque;
+        margin: 80px auto 0 auto; /* top - right - bottom - left */
+        color: rgb(204, 204, 204);
         max-width: 1000px;
-        margin: 0 auto;
-        padding: 0 20px;
-        text-align: center;
+        padding: 40px;
+        text-align: justify;
         }
 
         .proceso{
@@ -54,7 +77,7 @@ body{
         } 
 } 
 
-.header {
+/*.header {
     background-image: url(assets/a.jpg);
     background-position: top center;
     background-repeat: no-repeat;
@@ -64,9 +87,9 @@ body{
     align-items: center;
     justify-content: center;
     text-align: center;
-}
+}*/
 
-.titulo {
+/*.titulo {
     position: absolute;
     text-align: center;
     top: 150px;
@@ -76,3 +99,4 @@ body{
     justify-content: space-between;
     border-bottom: 1px solid #ffffff21;
 }
+    */

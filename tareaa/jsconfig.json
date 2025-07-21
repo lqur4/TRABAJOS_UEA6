@@ -1,0 +1,17 @@
+let cam;
+
+function setup() {
+  createCanvas(640, 480);
+  cam = createCapture(VIDEO); // abre la webcam
+  cam.size(width, height);
+  cam.hide();                 // oculta el <video> nativo
+}
+
+function draw() {
+  background(0);
+  push();                 // espejo horizontal
+  translate(width, 0);
+  scale(-1, 1);
+  image(cam, 0, 0, width, height);
+  pop();
+}
