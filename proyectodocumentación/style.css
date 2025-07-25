@@ -21,7 +21,7 @@ body{
         display: flex;                      /*activa Flexbox que es para alinear elementos fácilmente*/
         align-items: center;
         justify-content: center;
-        color: rgba(255, 255, 255, 0.479);
+        color: rgba(255, 255, 255, 0.747);
         font-size: 70px;
         }
 
@@ -39,7 +39,7 @@ body{
         }
 
         .autorías{
-        color: rgba(146, 168, 196, 0.918);
+        color: rgba(146, 168, 196, 0.993);
         text-align: center;
         position: absolute;
         top: 30px;                            /* distancia desde arriba */
@@ -127,5 +127,11 @@ body{
         transform: scale(1.05);
         }
 
+
+        .fotosinstalación img{
+        width: 850px;
+        height: 560px;
+        
+        }
 
 } 
