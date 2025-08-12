@@ -10,7 +10,7 @@
 
 body{
     font-family: 'Intel One Mono', monospace;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(4, 8, 8);
 
         .hero {
         height: 100vh;                      /* ocupa toda la altura de la ventana */
@@ -62,13 +62,14 @@ body{
         }
 
 
-        .descripción {
-        color: rgb(179, 204, 233);
+        .descripcion {
+        color: rgb(255, 255, 255);
         font-size: 17px;
         margin: 80px auto 0 auto;             /* el espacio hacia arriba */
         padding: 20px;                        /* lo "apretado" que va a estar el texto, agrega espacio al rededor del contenido */
         max-width: 1000px;                    /* es para que la imagen no se desborde*/
         text-align: justify;
+        line-height: 35px;
         }
 
         .bocetos{
@@ -80,12 +81,13 @@ body{
         } 
 
         .definicion{
-        color: #ffffffa8;
+        color: #ffffff;
         font-size: 17px;
         margin: 30px auto 0 auto; 
         padding: 20px; 
         max-width: 1000px;
         text-align: justify;
+        line-height: 35px;
         }
 
         .entorno{
@@ -98,12 +100,13 @@ body{
         }
 
         .herramientas{
-        color: #ffffffa8;
+        color: #ffffff;
         font-size: 17px;
-        margin: 50px auto 0 auto; 
-        padding: 20px; 
+        margin: 30px auto 0 auto; 
+        padding: 0px; 
         max-width: 1000px;
         text-align: justify;
+        line-height: 35px;
         }
 
         .imagen {
@@ -111,12 +114,12 @@ body{
         justify-content: center;              /* centra horizontalmente */
         align-items: center;                  /* centra verticalmente */
         gap: 40px;                            /* espacio entre las imágenes */
-        padding: 60px 20px;
+        padding: 50px 20px;
         }
 
         .imagen img {
-        width: 460px;
-        height: 460px;
+        width: 400px;
+        height: 400px;
         max-width: 100%;
         transition: transform 0.3s ease;      /*agrega una animación acompañada del hover para que se vea suave*/
         border-radius: 6px;                   /*redondea las esquinas*/
@@ -134,4 +137,174 @@ body{
         
         }
 
+        .bloque-documentacion {
+        margin-top: 80px; /* mueve título y carrusel juntos */
+}
+
+        .desarrollo{
+        color: rgb(255, 255, 255);
+        font-size: 17px;
+        margin: 100px auto 0 auto;             /* el espacio hacia arriba */
+        padding: 20px;                        /* lo "apretado" que va a estar el texto, agrega espacio al rededor del contenido */
+        max-width: 1000px;                    /* es para que la imagen no se desborde*/
+        text-align: justify;
+        background-color: #eef2ff0e;
+        line-height: 35px;
+        }
+
+                    /*CARRUSEL*/
+        :root{
+        --gap: 16px;
+        --nav-size: 44px;
+        --bg: #0f172a;
+        --card: #fff;
+        --accent: #2563eb;
+    }
+
+
+    *{box-sizing:border-box}
+    body{
+        margin:24px;
+        font-family: system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+        background: linear-gradient(180deg,#f7f8fb,#eef2ff);
+        color:#0b1220;
+        display:flex;
+        justify-content:center;
+    }
+
+    /* Contenedor del carrusel */
+    .carousel{
+        margin: 50px auto 0 auto; /* 80px de espacio arriba, centrado horizontalmente */
+        width: min(980px, 96%);
+        background: var(--card);
+        border-radius:14px;
+        overflow:hidden;
+        box-shadow: 0 8px 28px rgb(4, 8, 8);
+    }
+
+    /* viewport y pista */
+    .carousel-viewport{
+        position:relative;
+        overflow:hidden;
+        width:100%;
+        aspect-ratio: 16 / 9; /* cambia si quieres otras proporciones */
+        background: #000;
+    }
+    .track{
+        display:flex;
+        transition:transform 500ms cubic-bezier(.2,.9,.2,1);
+        height:100%;
+    }
+    .slide{
+        min-width:100%;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        padding: 12px;
+    }
+
+    figure{
+        margin:0;
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+        color:rgb(4, 8, 8);
+        text-align:center;
+    }
+    img{
+        width:100%;
+        height: calc(100% - 64px);
+        object-fit: cover;
+        border-radius:8px;
+        display:block;
+        max-height: calc(100% - 64px);
+    }
+    figcaption{
+        margin-top:10px;
+        padding:8px 12px;
+        width:100%;
+        font-size:0.95rem;
+    }
+
+    /* controles */
+    .controls{
+        position:absolute;
+        inset:0;
+        pointer-events:none;
+    }
+    .btn{
+        pointer-events:auto;
+        position:absolute;
+        top:50%;
+        transform:translateY(-50%);
+        width:var(--nav-size);
+        height:var(--nav-size);
+        border-radius:10px;
+        border: none;
+        background: rgba(255,255,255,0.85);
+        display:grid;
+        place-items:center;
+        cursor:pointer;
+        box-shadow: 0 6px 18px rgba(12,18,40,0.12);
+    }
+    .btn:hover{transform: translateY(-50%) scale(1.03)}
+    .btn:active{transform: translateY(-50%) scale(.98)}
+    .prev{ left:12px; }
+    .next{ right:12px; }
+
+    /* indicadores */
+    .indicators{
+        display:flex;
+        gap:8px;
+        position:absolute;
+        left:50%;
+        transform:translateX(-50%);
+        bottom:10px;
+        padding:6px;
+        pointer-events:auto;
+    }
+    .dot{
+        width:10px;height:10px;border-radius:50%;
+        background:rgb(255, 255, 255);
+        border:1px solid rgba(162, 180, 218, 0.952);
+        cursor:pointer;
+    }
+    .dot[aria-pressed="true"]{
+        background: var(--accent);
+        transform:scale(1.15);
+    }
+
+    /* pie de carrusel: título y subtítulo opcional */
+    .carousel-footer{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        padding:12px 16px;
+        gap:12px;
+        border-top:1px solid rgba(11,18,32,0.04);
+    }
+    .carousel-title{font-weight:600}
+    .carousel-controls-small{display:flex; gap:8px; align-items:center}
+
+    /* responsive */
+    @media (max-width:640px){
+        figcaption{font-size:0.9rem}
+        .btn{width:40px;height:40px}
+  }
+
+  .Repo{
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    margin: 50px auto 0 auto;             /* el espacio hacia arriba */
+    padding: 20px;                        /* lo "apretado" que va a estar el texto, agrega espacio al rededor del contenido */
+    max-width: 1000px;                    /* es para que la imagen no se desborde*/
+    text-align:left;
+    line-height: 35px;  
+  }
+
+  a {
+  color: rgb(68, 98, 180); /* el color que quieras */
+}
 } 

@@ -34,7 +34,7 @@
     </div>!-->
 
 
-    <div class="descripción">
+    <div class="descripcion">
     <p> 
       <strong><em>Ausencia</em></strong> es una instalación que simula o interpreta la experiencia de navegar por la red representada en un espacio liminal, que muestra fragmentos de texto, ventanas emergentes o audios recortados.
 
@@ -43,6 +43,12 @@
     </p>
     </div>
 
+        <video class="entorno" autoplay loop muted playsinline>
+    <source src="assets/fondofinalorasi.mp4" type="video/mp4">
+    </video>
+
+
+
     <div class="definicion">
       <h3>¿En qué consiste?</h3>
       <p> <br> Se trata de un entorno virtual de tres canales el cual interpreta la experiencia de vivir en una realidad hipermediada, caracterizada por la constante conectividad y la sobrecarga de estímulos.</p>
@@ -50,30 +56,10 @@
       <p> <br> A través de este espacio, se busca provocar en el usuario una sensación de saturación digital mediante interacciones como el scrolling, ventanas emergentes y audios superpuestos, recreando la intensidad y el caos que definen nuestra interpretación de la red contemporánea. Estos elementos en lugar de facilitar la interacción comienzan a saturar visualmente el espacio, generando una sensación de agobio, infoxicación y ruido, simulando la experiencia de encontrarse dentro de la red donde el exceso de información termina por dificultar la la navegación y la comprensión del entorno. </p>
     </div>
 
-    <video class="entorno" autoplay loop muted playsinline>
-    <source src="assets/fondofinalorasi.mp4" type="video/mp4">
-    </video>
-
-    <div class="herramientas">
-    Para el desarrollo de la obra utilizamos principalmente TouchDesigner, con el que construimos tanto el entorno visual como las pestañas emergentes que aparecen durante la experiencia.
-    <br>Además, empleamos la app OSC Controller, que nos permitió integrar gestos como el swipe, con el cual se pueden descartar notificaciones y otros elementos que van apareciendo en escena.
-    </div>
-
-    <div class="bocetos">
+    
+        <div class="bocetos">
     <h2> Bocetos</h2>
 
-    <!--<p3>concepto: descripción amplia</p3>
-
-    fotos, videos, audios del proceso
-
-    cómo lo hice: programación, desarrollo, software usado
-
-    links a github y herramientas!-->
-
-    </div>
-
-
-   
 
      <div class="imagen"> 
       <img src="assets/a.jpg" alt="bocetos">
@@ -81,14 +67,204 @@
       <img src="assets/a.jpg" alt="Imagen 3">
     </div>
 
-    <div class="fotosinstalación"> 
-      <img src="assets/WhatsApp Image 2025-07-20 at 6.16.44 PM.jpeg" alt="expo1">
-      <img src="assets/WhatsApp Image 2025-07-25 at 8.37.50 AM.jpeg" alt="expo2">
+
+
+    <div class="herramientas">
+    Para el desarrollo de la obra utilizamos principalmente TouchDesigner, con el que construimos tanto el entorno visual como las pestañas emergentes que aparecen durante la experiencia. Además, empleamos la app OSC Controller, que nos permitió integrar gestos como el swipe, con el cual se pueden descartar notificaciones y otros elementos que van apareciendo en escena.
+    <br> <br>Durante el proceso enfrentamos múltiples dificultades técnicas, especialmente en el aprendizaje y manipulación de ambas herramientas. Estos retos resultaron en ajustes y cambios en la propuesta original, que fueron resueltos gracias a la asesoría docente y a la búsqueda constante de soluciones.
     </div>
 
 
+  <section class="bloque-documentacion">
+    <h2 class="Documentacion">Documentación de la obra</h2>
+
+    <div class="carousel" id="carousel1">
+  <div class="carousel-viewport" tabindex="0" aria-roledescription="carrusel de imágenes" aria-label="Galería de fotos">
+    <div class="track" id="track">
+      <!-- Slide 1 -->
+      <div class="slide" role="group" aria-roledescription="slide" aria-label="1 of 6" data-index="0">
+        <figure>
+          <img src="assets/1.jpg" alt="Montañas y lago al atardecer" loading="lazy">
+          <figcaption>Primeras pruebas de mapeo en el salón I-11 donde se realizó la presentación de la obra.</figcaption>
+        </figure>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="slide" role="group" aria-roledescription="slide" aria-label="2 of 6" data-index="1">
+        <figure>
+          <img src="assets/2.png" alt="Camino entre árboles otoñales" loading="lazy">
+          <figcaption>Storyboard del proyecto.</figcaption>
+        </figure>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="slide" role="group" aria-roledescription="slide" aria-label="3 of 6" data-index="2">
+        <figure>
+          <img src="assets/3.jpeg" alt="Ciudad nocturna con luces" loading="lazy">
+          <figcaption>Segundo coloquio, presentado en el I-11 con avances significativos de la obra.</figcaption>
+        </figure>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="slide" role="group" aria-roledescription="slide" aria-label="4 of 6" data-index="3">
+        <figure>
+          <img src="assets/5.jpg" alt="Playa y rocas al amanecer" loading="lazy">
+          <figcaption>Presentación final.</figcaption>
+        </figure>
+      </div>
+
+      <!-- Slide 5 -->
+      <div class="slide" role="group" aria-roledescription="slide" aria-label="5 of 6" data-index="4">
+        <figure>
+          <video controls width="100%" height="400" preload="metadata" muted>
+            <source src="assets/6.mp4" type="video/mp4" />
+          </video>
+          <figcaption>Presentación final.</figcaption>
+        </figure>
+      </div>
+
+    </div>
+
+    <div class="controls" aria-hidden="false">
+      <button class="btn prev" id="prevBtn" aria-label="Anterior (flecha izquierda)">&#9664;</button>
+      <button class="btn next" id="nextBtn" aria-label="Siguiente (flecha derecha)">&#9654;</button>
+
+      <div class="indicators" id="indicators" role="tablist" aria-label="Indicadores del carrusel">
+        <!-- Dots se generan desde JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Descripción dinámica -->
+  <div class="carousel-description" id="descripcion"></div>
+
+  <!-- Botón de fullscreen 
+  <button id="fullscreenBtn">Pantalla completa</button>
+</div>-->
+
+<script>
+(function(){
+  const track = document.getElementById('track');
+  const slides = Array.from(track.children);
+  const prevBtn = document.getElementById('prevBtn');
+  const nextBtn = document.getElementById('nextBtn');
+  const indicators = document.getElementById('indicators');
+  const viewport = document.querySelector('.carousel-viewport');
+  const descripcion = document.getElementById('descripcion');
+
+  let current = 0;
+  const total = slides.length;
+  let autoplay = true;
+  let intervalMs = 4000;
+  let timer = null;
+
+  // Crear indicadores
+  slides.forEach((s, i) => {
+    const dot = document.createElement('button');
+    dot.className = 'dot';
+    dot.setAttribute('role','tab');
+    dot.setAttribute('aria-pressed', i === 0 ? 'true' : 'false');
+    dot.setAttribute('aria-label', `Ir a la diapositiva ${i+1}`);
+    dot.dataset.index = i;
+    dot.addEventListener('click', () => goTo(i));
+    indicators.appendChild(dot);
+  });
+
+  const dots = Array.from(indicators.children);
+
+  function update(){
+    const x = -current * 100;
+    track.style.transform = `translateX(${x}%)`;
+    slides.forEach((s,i)=> s.setAttribute('aria-hidden', i===current ? 'false' : 'true'));
+    dots.forEach((d,i)=> d.setAttribute('aria-pressed', i===current ? 'true' : 'false'));
+    // Actualizar descripción dinámica
+    const texto = slides[current].querySelector('figcaption').textContent;
+    descripcion.textContent = texto;
+  }
+
+  function prev(){ current = (current - 1 + total) % total; update(); resetTimer(); }
+  function next(){ current = (current + 1) % total; update(); resetTimer(); }
+  function goTo(i){ current = (i + total) % total; update(); resetTimer(); }
+
+  prevBtn.addEventListener('click', prev);
+  nextBtn.addEventListener('click', next);
+
+  // teclado
+  viewport.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowLeft') prev();
+    if (e.key === 'ArrowRight') next();
+    if (e.key === ' ' || e.key === 'Spacebar') {
+      e.preventDefault();
+      autoplay = !autoplay;
+      if (autoplay) resume(); else pause();
+    }
+  });
+
+  // pausa al hover o focus
+  viewport.addEventListener('mouseenter', pause);
+  viewport.addEventListener('mouseleave', resume);
+  viewport.addEventListener('focusin', pause);
+  viewport.addEventListener('focusout', resume);
+
+  // autoplay
+  function startTimer(){
+    if (!autoplay) return;
+    timer = setInterval(()=> { next(); }, intervalMs);
+  }
+  function pause(){
+    if (timer) { clearInterval(timer); timer = null; }
+  }
+  function resume(){
+    if (autoplay && !timer) startTimer();
+  }
+  function resetTimer(){
+    pause();
+    resume();
+  }
+
+  // inicio
+  update();
+  startTimer();
+
+  // fullscreen
+  const carousel = document.getElementById('carousel1');
+  const fullscreenBtn = document.getElementById('fullscreenBtn');
+
+  fullscreenBtn.addEventListener('click', () => {
+    if (!document.fullscreenElement) {
+      carousel.requestFullscreen().catch(err => {
+        alert(`Error al entrar en fullscreen: ${err.message}`);
+      });
+    } else {
+      document.exitFullscreen();
+    }
+  });
+
+  // ajustar al redimensionar
+  window.addEventListener('resize', update);
+})();
+</script>
 
 
+        <div class="desarrollo">
+  Nos gustaría seguir explorando el potencial de las herramientas usadas por lo que pensamos seguir desarrollando la obra para su posible exposición en museos, galerías y/o espacios que permitan su despliegue en tres canales, incorporando mejoras técnicas y visuales que enriquezcan la experiencia del espectador.
+    </div>
+
+    <div class="Repo">
+  Link al repositorio de la obra: 
+  <a href="https://github.com/lqur4/proyecto-EJE6.git" target="_blank" rel="noopener noreferrer">
+    https://github.com/lqur4/proyecto-EJE6.git
+  </a>
+  <br><br>
+  Google Drive del equipo: 
+  <a href="https://drive.google.com/drive/folders/1utunEzlbzbLbVXst2pSWGzx0tCcYoJtl?usp=sharing" target="_blank" rel="noopener noreferrer">
+    https://drive.google.com/drive/folders/1utunEzlbzbLbVXst2pSWGzx0tCcYoJtl?usp=sharing
+  </a>
+</div>
+
+
+
+</html>
 
     <script src="script.js"></script>
 </body>
